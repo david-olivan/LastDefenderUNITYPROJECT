@@ -1,0 +1,29 @@
+Things to improve once I finish the main tutorial
+
+- I want to have several formations, and each of them should have different enemies.
+- Colors of enemies based on current score, and toughness of enemies
+- Prefabs of different formations that also change depending to the score (Tier system)
+- System to deliver meteors, powerups and pieces
+	- instanciating them over the top edge the giving them some -y speed
+	- Colliders to check whether the player got the powerups or the pieces and damage of the meteor
+- Move the player shooting system to a script gun
+	- Use prefabs of different guns
+	- They will instantiate the lasers
+	- Different gun configurations through research?
+- Shield
+	- Creates another object inside of the ship
+	- This object takes damage until it is destroyed
+	- It requires a cooldown which can be reduced by powerups?
+- Firing rate powerup
+- Player can choose different ships
+
+-IMPORTANT! --- Make sure we use the 'pool' pattern where instead of destroying the enemies
+when killing them, we just hide them and get them ready to be used again when spawning new 
+enemies (change spawn function to check whether we have non-active enemies, if we don't then
+we instantiate new ones, if we do, we 'rewind' those). Hide function and a trigger to get 
+back to the spawning state.
+
+*** TODO TASKS ***
+- Port it to ANDROID
+	- Get a first alpha
+- Delay on waves?
